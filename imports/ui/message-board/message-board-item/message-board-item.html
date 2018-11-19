@@ -4,9 +4,11 @@
       <div class="row">
         <div class="col-6">{{ message }}</div>
         <div class="col text-right">
+          {{#if isOwner}}
           <button class="btn btn-outline-danger btn-sm delete-btn">
             Delete
           </button>
+          {{/if}}
         </div>
       </div>
     </div>

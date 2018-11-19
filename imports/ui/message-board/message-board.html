@@ -1,0 +1,22 @@
+<template name="messageBoard">
+  <div class="message-board">
+    <form class="new-message">
+      <div class="form-group">
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          placeholder="Your message goes here..."
+          name="messageText"
+        ></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Post Message</button>
+    </form>
+
+    <ul class="list-group">
+      {{#each messages}}
+      {{> messageBoardItem}}
+      {{/each}}
+    </ul>
+  </div>
+</template>

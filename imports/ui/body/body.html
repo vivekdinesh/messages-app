@@ -19,8 +19,6 @@
     </div>
   </nav>
   <main role="main" class="container">
-    {{#if currentUser}}
-
-    {{else}} {{> landingPage}} {{/if}}
+    {{#if currentUser}} {{> messageBoard}} {{else}} {{> landingPage}} {{/if}}
   </main>
 </body>
